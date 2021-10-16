@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background: #b0cff8;
+
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#container {
+  max-width: 1200px;
+
+  margin: 3rem auto;
+}
+
+#container .heading {
+  text-align: center;
+
+  font-size: 3em;
+
+  margin: 2rem auto;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  column-gap: 2rem;
+}
+
+section.col.active {
+  border: #ff4500 2px solid;
+}
+
+section.col.finished {
+  border: #055805 2px solid;
+}
+
+section.col {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  width: 80%;
+
+  height: auto;
+}
+
+.active .header {
+  background: #ffa500;
+
+  border-bottom: #ff4500 4px solid;
+}
+
+.finished .header {
+  background: green;
+
+  border-bottom: #055805 4px solid;
+}
+
+.header {
+  width: 100%;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+
+  padding: 15px;
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card {
+  width: 100%; /*  21rem  */
+  height: 6rem; /*  6rem  */
+
+  padding: 1rem;
+}
+
+.active .card {
+  border-bottom: #ff4500 2px solid;
+
+  background: #ffe4e4;
+}
+
+.finished .card {
+  border-bottom: #055805 2px solid;
+
+  background: #bdffbd;
+}
+
+.card button {
+  margin: 10px 10px 0 0;
+
+  width: 30%;
+  height: 30px;
+
+  font-size: 15px;
+}
+
+.active .card button {
+  border: #ff4500 1px solid;
+
+  color: #ff4500;
+
+  background: #fff4f0;
+}
+
+.finished .card button {
+  border: #055805 1px solid;
+
+  color: #055805;
+
+  background: #e9fde9;
+}
+
+.card button:hover {
+  background: #e4e4e4;
+}
+
+.card button:active {
+  background: #999898;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    height: auto;
+  }
+  .card button {
+    display: block;
+
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  section.col {
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .card {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  * {
+    font-size: 8vw;
+  }
+}
