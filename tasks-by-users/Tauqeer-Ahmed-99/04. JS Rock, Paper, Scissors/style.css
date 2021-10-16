@@ -1,0 +1,51 @@
+body {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: auto;
+  background-image: url(https://microbit.nominetresearch.uk/networking-book-online/rockpaperscissors/Rock-paper-scissors.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 80px;
+}
+#button {
+  padding-top: 200px;
+}
+#btn {
+  height: 55px;
+  width: 120px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  background-color: skyblue;
+}
+
+#btn:hover {
+  background-color: cyan;
+  box-shadow: 2px 2px 3px 2px grey;
+  border-bottom: solid black 2px;
+  border-right: solid black 2px;
+  border-top: none;
+  border-left: none;
+}
+
+#btn:active {
+  border-top: solid black 2px;
+  border-left: solid black 2px;
+  border-bottom: none;
+  border-right: none;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    background-size: 360px 380px;
+  }
+  #button {
+    padding-top: 190px;
+  }
+  #btn {
+    height: 40px;
+    width: 100px;
+    font-size: 25px;
+  }
+}
