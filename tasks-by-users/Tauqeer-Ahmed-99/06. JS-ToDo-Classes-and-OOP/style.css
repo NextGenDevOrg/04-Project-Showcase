@@ -64,6 +64,8 @@ section.col {
 }
 
 .header {
+  color: #fff;
+
   width: 100%;
   height: 4rem;
 
@@ -77,22 +79,29 @@ section.col {
 }
 
 .card {
-  width: 100%; /*  21rem  */
+  width: 92%; /*  21rem  */
   height: 6rem; /*  6rem  */
 
   padding: 1rem;
+  margin: 4%;
+
+  border-radius: 5px;
 }
 
 .active .card {
   border-bottom: #ff4500 2px solid;
 
   background: #ffe4e4;
+
+  box-shadow: -4px -4px 4px #f9ad31, 4px 4px 6px #f38c34;
 }
 
 .finished .card {
   border-bottom: #055805 2px solid;
 
   background: #bdffbd;
+
+  box-shadow: -4px -4px 4px #44b800, 4px 4px 6px #44b800;
 }
 
 .card button {
