@@ -27,7 +27,7 @@ body {
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
-.profiletext {
+.profile-text {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.profiletext .imgbox {
+.profile-text .imgbox {
   position: relative;
   width: 200px;
   height: 200px;
@@ -44,7 +44,7 @@ body {
   overflow: hidden;
 }
 
-.profiletext .imgbox img {
+.profile-text .imgbox img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -58,7 +58,7 @@ body {
   padding: 40px;
 }
 
-.profiletext h2 {
+.profile-text h2 {
   color: white;
   font-size: 1.5em;
   margin-top: 20px;
@@ -68,7 +68,7 @@ body {
   line-height: 1.4em;
 }
 
-.profiletext h2 span {
+.profile-text h2 span {
   font-size: 0.8em;
   font-weight: 300;
 }
@@ -117,7 +117,7 @@ body {
 }
 .contact.education h4:nth-child(2) {
   color: white;
-  font-weight: 00;
+  font-weight: 100;
 }
 
 .contact.education h4:nth-child(3) {
