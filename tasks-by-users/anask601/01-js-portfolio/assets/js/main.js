@@ -135,11 +135,11 @@ function scrollActive() {
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
-        .querySelector(".nav_menu a[href*=" + sectionId + "]")
+        .querySelector(`.nav_menu a[href*=" + sectionId + "]`)
         .classList.add("active-link");
     } else {
       document
-        .querySelector(".nav_menu a[href*=" + sectionId + "]")
+        .querySelector(`.nav_menu a[href*=" + sectionId + "]`)
         .classList.remove("active-link");
     }
   });
@@ -172,15 +172,15 @@ const iconTheme = "uil-sun";
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
 
- /* We obtain the current theme that the interface has by validating the dark-theme class */
+/* We obtain the current theme that the interface has by validating the dark-theme class */
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
- /* We validate if the user previously chose a topic */
+/* We validate if the user previously chose a topic */
 if (selectedTheme) {
-   /* If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark */
+  /* If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark */
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
   );

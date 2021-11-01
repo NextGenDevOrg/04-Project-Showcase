@@ -179,7 +179,7 @@ img {
   gap: 1.5rem;
 }
 
-.header {
+header {
   width: 100%;
 
   position: fixed;
@@ -389,6 +389,7 @@ img {
 
   background-color: var(--first-color);
   color: #fff;
+
   font-weight: var(--font-medium);
 
   border-radius: 0.5rem;
@@ -547,11 +548,14 @@ img {
   background-color: var(--first-color);
 }
 
-.skills_html {
+.skills_html,
+.skills_firebase,
+.skills_figma {
   width: 90%;
 }
 
-.skills_css {
+.skills_css,
+.skills_php {
   width: 80%;
 }
 
@@ -563,30 +567,15 @@ img {
   width: 85%;
 }
 
-.skills_php {
-  width: 80%;
-}
-
 .skills_node {
   width: 70%;
-}
-
-.skills_firebase {
-  width: 90%;
 }
 
 .skills_python {
   width: 55%;
 }
 
-.skills_figma {
-  width: 90%;
-}
-
-.skills_sketch {
-  width: 85%;
-}
-
+.skills_sketch,
 .skills_photoshop {
   width: 85%;
 }
@@ -994,8 +983,8 @@ img {
 
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
-/*==================== FOOTER ====================*/
-.footer {
+/*==================== footer ====================*/
+footer {
   padding-top: 2rem;
 }
 
@@ -1211,12 +1200,12 @@ img {
     margin-bottom: 4rem;
   }
 
-  .header {
+  header {
     top: 0;
     bottom: initial;
   }
 
-  .header,
+  header,
   .main,
   .footer_container {
     padding: 0 1rem;
@@ -1372,9 +1361,10 @@ img {
 /* For large devices  */
 
 @media screen and (min-width: 1024px) {
-  .header,
+  header,
   .main,
-  .footer.container {
+  footer,
+  .container {
     padding: 0;
   }
 
