@@ -7,7 +7,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body{
+
+.container{
+    position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -15,10 +17,6 @@ body{
     min-height: 100vh;
 
     background-color: #131313;
-}
-
-.container{
-    position: relative;
 }
 
 .container .card{  
