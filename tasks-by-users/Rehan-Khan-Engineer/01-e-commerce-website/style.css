@@ -8,6 +8,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.logo img {
+  width: 125px;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -132,9 +136,11 @@ P {
 .title::after {
   content: "";
   background: #ff523b;
+
   width: 80px;
   height: 5px;
   border-radius: 5px;
+
   position: absolute;
   bottom: 0;
   left: 50%;
