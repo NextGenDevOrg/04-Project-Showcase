@@ -1,9 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
-  color: #ddd;
+
   font-family: sans-serif;
+
+  color: #ddd;
   background: #333;
 }
 h2 {

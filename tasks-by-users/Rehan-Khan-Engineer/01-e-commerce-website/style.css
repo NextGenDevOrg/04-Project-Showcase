@@ -43,6 +43,7 @@ P {
 
 .container {
   max-width: 1300px;
+
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -57,26 +58,33 @@ P {
 
 .col-2 {
   flex-basis: 50%;
+
   min-width: 300px;
 }
 .col-2 img {
   max-width: 100%;
+
   padding: 50px 0;
 }
 
 .col-2 h1 {
   font-size: 50px;
+
   line-height: 60px;
+
   margin: 25px 0;
 }
 
 .btn {
   display: inline-block;
+
   background: #ff523b;
   color: #fff;
+
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
+
   transition: background 0.5s;
 }
 
@@ -98,7 +106,9 @@ P {
 
 .col-3 {
   flex-basis: 30%;
+
   min-width: 250px;
+
   margin-bottom: 30px;
 }
 
@@ -108,6 +118,7 @@ P {
 
 .small-container {
   max-width: 1080px;
+
   margin: auto;
   padding-right: 25px;
   padding-left: 25px;
@@ -115,9 +126,12 @@ P {
 
 .col-4 {
   flex-basis: 25%;
-  padding: 10px;
-  min-width: 200px;
+
   margin-bottom: 50px;
+  padding: 10px;
+
+  min-width: 200px;
+
   transition: transform 0.5s;
 }
 
@@ -127,9 +141,13 @@ P {
 
 .title {
   text-align: center;
+
   margin: 0 auto 80px;
+
   position: relative;
+
   line-height: 60px;
+
   color: #555;
 }
 
@@ -167,6 +185,7 @@ h4 {
 /* offer section */
 .offer {
   background: linear-gradient(#fff, rgb(53, 184, 53));
+
   margin-top: 80px;
   padding: 30px 0;
 }
@@ -187,7 +206,9 @@ small {
 
 .testimonial .col-3 {
   text-align: center;
+
   padding: 40px 20px;
+
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.5s;
@@ -210,6 +231,7 @@ small {
 .col-3 p {
   font-size: 12px;
   color: #777;
+
   margin: 12px 0;
 }
 .testimonial .col-3 h3 {
@@ -230,6 +252,7 @@ small {
 
 .col-5 img {
   width: 100%;
+
   cursor: pointer;
   filter: grayscale(50%);
 }
@@ -243,7 +266,9 @@ small {
 .footer {
   background: #000;
   color: #8a8a8a;
+
   font-size: 14px;
+
   padding: 60px 0 20px;
 }
 
@@ -253,6 +278,7 @@ small {
 
 .footer h3 {
   color: #fff;
+
   margin-bottom: 20px;
 }
 
@@ -318,14 +344,19 @@ ul {
     position: absolute;
     top: 70px;
     left: 0;
+
     background: #333;
+
     width: 100%;
+
     overflow: hidden;
+
     transition: max-height 0.5s;
   }
 
   nav ul li {
     display: block;
+
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -361,12 +392,16 @@ select:focus {
 
 .page-btn span {
   display: inline-block;
+
   border: 1px solid #ff523b;
   margin-left: 10px;
   width: 40px;
   height: 40px;
+
   text-align: center;
+
   line-height: 40px;
+
   cursor: pointer;
 }
 
