@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  background: rgb(22, 17, 17);
+  color: #fff;
+  min-height: 10vh;
+  font-size: 2em;
+  z-index: 10;
+  display: flex;
+}
+.header p {
+  margin-left: 21vw;
+  flex-basis: 80%;
+}
+nav {
+  flex-basis: 30%;
+}
+nav ul {
+  list-style: none;
+}
+div.content a{
+  text-decoration: none;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2vh;
+}
+.dropdown-content a {
+  color: rgb(231, 233, 225);
+  font-size: 3vh;
+  display: block;
+  text-decoration: none;
+}
+.dropdown-content {
+  padding: 10px;
+  background-color: darkcyan;
+  background-size: cover;
+  position: absolute;
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  box-shadow: 10px 10px 15px rgb(17, 16, 16);
+}
+.container {
+  background-color: #555;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.small-container {
+  display: flex;
+  z-index: 5;
+}
+.two,
+.one {
+  width: 300px;
+  transition: 0.8s;
+  border: 1px solid #000;
+  text-align: center;
+  overflow: hidden;
+}
+
+.one {
+  background: #333;
+  font-size: 3vh;
+  transform: translateX(150px);
+  z-index: 1;
+}
+
+.two {
+  transform: translateX(-150px);
+  background: rgb(182, 177, 177);
+  display: flex;
+  font-size: 2vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-container:hover .one {
+  transform: translateX(0);
+  background: goldenrod;
+  box-shadow: -10px -10px 20px rgb(213, 216, 27);
+  border-radius: 10px;
+}
+.small-container:hover .two {
+  transform: translateX(0);
+  box-shadow: 10px 10px 20px rgb(213, 216, 27);
+  border-radius: 10px;
+}
+img {
+  width: 10vw;
+  height: 20vh;
+}
+@media screen  and (max-width:950px){
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+footer {
+  min-height: 10vh;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 10vh;
+}
