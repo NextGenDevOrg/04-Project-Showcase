@@ -4,16 +4,14 @@
   box-sizing: border-box;
 }
 .header {
-  min-width: 100%;
-  margin: 0 auto;
   padding: 10px;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background: rgb(22, 17, 17);
   color: #fff;
   min-height: 10vh;
   font-size: 2em;
-  z-index: 10;
   display: flex;
 }
 .header p {
